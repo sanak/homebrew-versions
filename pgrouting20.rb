@@ -4,6 +4,8 @@ class Pgrouting20 < Formula
   url "https://github.com/pgRouting/pgrouting/archive/pgrouting-2.0.1.tar.gz"
   sha256 "dfb4acddae634e705e680783413317c7482c42c94cd2795dcc359a98356e0e1c"
 
+  conflicts_with "pgrouting", :because => "Differing versions of the same formula"
+
   # work around function name conflict from Postgres
   # https://github.com/pgRouting/pgrouting/issues/274
   patch :DATA
