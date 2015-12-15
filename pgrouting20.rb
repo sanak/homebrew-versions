@@ -1,5 +1,5 @@
 class Pgrouting20 < Formula
-  desc "Provides geospatial routing for PostGIS/PostgreSQL database"
+  desc "PostgreSQL extension to provide spatial routing"
   homepage "http://www.pgrouting.org"
   url "https://github.com/pgRouting/pgrouting/archive/pgrouting-2.0.1.tar.gz"
   sha256 "dfb4acddae634e705e680783413317c7482c42c94cd2795dcc359a98356e0e1c"
@@ -46,6 +46,7 @@ class Pgrouting20 < Formula
     end
   end
 end
+
 __END__
 diff --git a/src/astar/src/astar.h b/src/astar/src/astar.h
 index d5872bb..34a0621 100644
